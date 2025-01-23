@@ -1,0 +1,290 @@
+:root {
+    --color-primary: #007bff; /* Bleu primaire */
+    --color-secondary: #ff6b6b; /* Rouge corail */
+    --color-accent: #6bff6b; /* Vert néon */
+    --color-background: #1a1a1a; /* Fond sombre */
+    --color-text: #fff; /* Texte blanc */
+    --color-card-bg: rgba(0, 0, 0, 0.7); /* Fond de la carte */
+    --color-card-border: rgba(255, 255, 255, 0.1); /* Bordure de la carte */
+    --color-neon: var(--color-primary); /* Couleur du néon */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--color-card-bg);
+    border-radius: 12px;
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(0, 123, 255, 0.1);
+    border: 1px solid var(--color-card-border);
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Change from center to space-between */
+    position: relative; /* Ajout de position relative */
+    margin-bottom: 2rem;
+    width: 100%; /* S'assure que le conteneur prend toute la largeur */
+}
+
+h1 {
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 0; /* Suppression de la margin-bottom */
+    font-weight: 700;
+    position: absolute; /* Positionnement absolu */
+    left: 50%; /* Centrage horizontal */
+    transform: translateX(-50%); /* Centrage précis */
+    width: 100%; /* Prend toute la largeur */
+    z-index: 1; /* Assure que le titre reste au-dessus */
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-card-border);
+    border-radius: 8px;
+    color: var(--color-text);
+    transition: 
+        border-color 0.3s ease, 
+        box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-text);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 5px 15px rgba(0, 123, 255, 0.3),
+        0 3px 10px rgba(255, 107, 107, 0.2);
+}
+
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-card-border);
+    border-radius: 8px;
+    color: var(--color-text);
+    transition: 
+        border-color 0.3s ease, 
+        box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-group input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+    width: 0;
+}
+
+.form-group input[type="file"]::before {
+    content: 'Sélectionner une image';
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-text);
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.form-group input[type="file"]::before:hover {
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 
+        0 5px 15px rgba(0, 123, 255, 0.3),
+        0 3px 10px rgba(255, 107, 107, 0.2);
+}
+
+.form-group input[type="file"]:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.form-group input[type="file"]:focus::before {
+    box-shadow: 
+        0 0 0 3px rgba(0, 123, 255, 0.2),
+        0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.form-group input[type="file"]:after {
+    content: attr(data-content);
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: var(--color-text);
+    opacity: 0.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 200px);
+}
+
+.back-button {
+    position: relative; /* Repositionnement */
+    z-index: 2; /* Assure que le bouton reste clickable */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0; /* Suppression de la margin-left */
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-text);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 5px 15px rgba(0, 123, 255, 0.3),
+        0 3px 10px rgba(255, 107, 107, 0.2);
+}
+
+.back-button i {
+    margin-right: 0.5rem;
+}
+
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.custom-toast {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent)) !important;
+    color: var(--color-text) !important;
+    border-radius: 10px;
+}
+
+.toast-header {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+@keyframes inputFocus {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.01); }
+    100% { transform: scale(1); }
+}
+
+input:focus {
+    animation: inputFocus 0.4s ease;
+}
+
+@keyframes slideInRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.toast.hide {
+    animation: fadeOut 0.5s ease-in;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+@keyframes subtle-float {
+    0% { transform: translateY(0 ); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+}
+
+.floating-element {
+    animation: subtle-float 3s ease-in-out infinite;
+}

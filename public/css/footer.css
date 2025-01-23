@@ -1,0 +1,141 @@
+:root {
+    --color-primary: #007bff; /* Bleu primaire */
+    --color-secondary: #ff6b6b; /* Rouge corail */
+    --color-accent: #6bff6b; /* Vert néon */
+    --color-background: #1a1a1a; /* Fond sombre */
+    --color-text: #fff; /* Texte blanc */
+    --color-card-bg: rgba(0, 0, 0, 0.7); /* Fond de la carte */
+    --color-card-border: rgba(255, 255, 255, 0.1); /* Bordure de la carte */
+    --color-neon: var(--color-primary); /* Couleur du néon */
+}
+
+.footer {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--color-card-border);
+    transition: all 0.5s ease-in-out;
+}
+
+.footer:hover {
+    background-color: var(--color-card-bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer a:hover {
+    color: var(--color-secondary);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .col-md-4 {
+    flex-basis: 33.33%;
+}
+
+.footer .text-right {
+    text-align: right;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    color: var(--color-text);
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fade-in 2s;
+}
+
+.footer .copyright a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer .copyright a:hover {
+    color: var(--color-secondary);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.footer .pulse {
+    animation: pulse 2s infinite;
+}
+
+.footer .fade-in {
+    animation: fade-in 2s;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    margin-right: 20px;
+    animation: pulse 2s infinite;
+}
+
+.social-media a:hover {
+    color: var(--color-secondary);
+}
+
+.social-media i {
+    font-size: 24px;
+}

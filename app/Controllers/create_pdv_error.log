@@ -1,0 +1,330 @@
+[2025-01-15 11:40:21] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:40:21] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0auto.jpeg
+            [full_path] => 0auto.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phpG4PVHb
+            [error] => 0
+            [size] => 113667
+        )
+
+)
+
+[2025-01-15 11:40:21] Échec de création du PDV dans le modèle
+[2025-01-15 11:42:27] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:42:27] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0alimetbois.jpeg
+            [full_path] => 0alimetbois.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phpBgOmLj
+            [error] => 0
+            [size] => 95204
+        )
+
+)
+
+[2025-01-15 11:42:27] Échec de création du PDV dans le modèle
+[2025-01-15 11:44:54] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:44:54] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0alimetbois.jpeg
+            [full_path] => 0alimetbois.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phprhX4Wc
+            [error] => 0
+            [size] => 95204
+        )
+
+)
+
+[2025-01-15 11:44:54] Échec de création du PDV dans le modèle
+[2025-01-15 11:45:28] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [openingTime] => 09:00
+    [closingTime] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:45:28] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0bes.jpeg
+            [full_path] => 0bes.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phptfYbeg
+            [error] => 0
+            [size] => 44524
+        )
+
+)
+
+[2025-01-15 11:45:28] Champs manquants : opening_time, closing_time
+[2025-01-15 11:46:27] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:46:27] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0alimetbois.jpeg
+            [full_path] => 0alimetbois.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phptVBsb9
+            [error] => 0
+            [size] => 95204
+        )
+
+)
+
+[2025-01-15 11:46:27] Échec de création du PDV dans le modèle
+[2025-01-15 11:51:14] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:51:14] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0alimetbois.jpeg
+            [full_path] => 0alimetbois.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phpozT49n
+            [error] => 0
+            [size] => 95204
+        )
+
+)
+
+[2025-01-15 11:51:14] Champs manquants : closing
+[2025-01-15 11:52:07] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:52:07] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0mej.jpeg
+            [full_path] => 0mej.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phpSROZ5a
+            [error] => 0
+            [size] => 134119
+        )
+
+)
+
+[2025-01-15 11:52:07] Échec de création du PDV dans le modèle
+[2025-01-15 11:53:19] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:53:19] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0auto.jpeg
+            [full_path] => 0auto.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phpIqcEgI
+            [error] => 0
+            [size] => 113667
+        )
+
+)
+
+[2025-01-15 11:53:19] Échec de création du PDV dans le modèle
+[2025-01-15 11:57:32] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8566
+    [longitude] => 2.3522
+)
+
+[2025-01-15 11:57:32] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => 0bes.jpeg
+            [full_path] => 0bes.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phpGHLq4g
+            [error] => 0
+            [size] => 44524
+        )
+
+)
+
+[2025-01-15 11:57:32] Échec de création du PDV dans le modèle
+[2025-01-16 17:24:15] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => test1
+    [groups] => test1
+    [siret] => 12345678912345
+    [adress] => 12, place des États-Unis 92127 Montrouge
+    [manager_last_name] => test1
+    [manager_first_name] => test1
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.817764
+    [longitude] => 2.3158889
+)
+
+[2025-01-16 17:24:15] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => Capture d’écran 2024-12-16 à 09.05.13.png
+            [full_path] => Capture d’écran 2024-12-16 à 09.05.13.png
+            [type] => image/png
+            [tmp_name] => /Applications/MAMP/tmp/php/phphU9n7c
+            [error] => 0
+            [size] => 102396
+        )
+
+)
+
+[2025-01-16 17:24:15] Échec de création du PDV dans le modèle
+[2025-01-16 17:24:16] Données reçues POST: Array
+(
+    [action] => createPDV
+    [name] => test1
+    [groups] => test1
+    [siret] => 12345678912345
+    [adress] => 12, place des États-Unis 92127 Montrouge
+    [manager_last_name] => test1
+    [manager_first_name] => test1
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.817764
+    [longitude] => 2.3158889
+)
+
+[2025-01-16 17:24:16] Données reçues FILES: Array
+(
+    [image] => Array
+        (
+            [name] => Capture d’écran 2024-12-16 à 09.05.13.png
+            [full_path] => Capture d’écran 2024-12-16 à 09.05.13.png
+            [type] => image/png
+            [tmp_name] => /Applications/MAMP/tmp/php/phpRluO62
+            [error] => 0
+            [size] => 102396
+        )
+
+)
+
+[2025-01-16 17:24:16] Échec de création du PDV dans le modèle

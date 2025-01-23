@@ -1,0 +1,28 @@
+Array
+(
+    [action] => createPDV
+    [name] => Test
+    [groups] => Testeur
+    [siret] => 82537491200123
+    [adress] => 12 Rue des Lilas 75015 Paris France
+    [manager_last_name] => Jean
+    [manager_first_name] => Dupont
+    [opening_time] => 09:00
+    [closing_time] => 19:00
+    [latitude] => 48.8390
+    [longitude] => 2.3030
+)
+
+Array
+(
+    [image] => Array
+        (
+            [name] => 0alimetbois.jpeg
+            [full_path] => 0alimetbois.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /Applications/MAMP/tmp/php/phpKjB0GB
+            [error] => 0
+            [size] => 95204
+        )
+
+)

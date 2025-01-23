@@ -1,0 +1,207 @@
+:root {
+    --color-primary: #00f0ff; /* Cyan néon vibrant */
+    --color-secondary: #ff3d68; /* Rose vif */
+    --color-accent: #7fff00; /* Vert lime électrique */
+    --color-background: #000814; /* Noir profond spatial */
+    --color-text: #e6e6e6; /* Gris clair */
+    --color-card-bg: rgba(2, 12, 27, 0.95); /* Bleu noir profond */
+    --color-table-bg: #010b1c; /* Noir bleuté profond */
+    --color-border: rgba(0, 240, 255, 0.3); /* Bordure cyan translucide */
+}
+
+/* Styles identiques à list_user.php */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cyberpunk-container {
+    background-color: var(--color-card-bg);
+    border-radius: 15px;
+    box-shadow: 
+        0 0 20px rgba(0, 240, 255, 0.2), 
+        0 0 50px rgba(255, 61, 104, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cyberpunk-title {
+    color: var(--color-primary);
+    text-shadow: 
+        0 0 10px var(--color-primary), 
+        0 0 20px var(--color-primary);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cyberpunk-search {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color-primary);
+    color: var(--color-text);
+}
+
+.cyberpunk-search:focus {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: var(--color-secondary);
+    box-shadow: 
+        0 0 10px var(--color-secondary), 
+        0 0 20px var(--color-secondary);
+    color: var(--color-text);
+}
+
+.table-cyberpunk {
+    --bs-table-bg: var(--color-table-bg);
+    --bs-table-color: var(--color-text);
+    --bs-table-hover-bg: rgba(0, 240, 255, 0.1);
+}
+
+.table-cyberpunk thead {
+    color: var(--color-primary);
+}
+
+.table-cyberpunk th {
+    border-color: var(--color-border);
+}
+
+.table-cyberpunk td {
+    border-color: var(--color-border);
+}
+
+@keyframes neon-glow {
+    0% { text-shadow: 0 0 10px var(--color-primary); }
+    100% { text-shadow: 0 0 20px var(--color-primary), 0 0 30px var(--color-primary); }
+}
+
+.neon-glow {
+    animation: neon-glow 2s infinite alternate;
+}
+.cyberpunk-btn {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.cyberpunk-btn:hover {
+    background-color: rgba(0, 240, 255, 0.1);
+    color: var(--color-text);
+    box-shadow: 
+        0 0 10px var(--color-primary),
+        0 0 20px var(--color-primary);
+    transform: scale(1.05);
+}
+
+/* Assure que le bouton soit au-dessus du contenu */
+.position-absolute {
+    z-index: 1050;
+}
+/* Styles spécifiques pour la modal */
+.modal-content.cyberpunk-modal {
+background-color: #020c1b; /* Noir profond bleuté */
+border: 2px solid var(--color-primary);
+box-shadow: 
+    0 0 20px rgba(0, 240, 255, 0.2), 
+    0 0 50px rgba(0, 240, 255, 0.1);
+}
+
+.cyberpunk-modal .modal-header {
+border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+background-color: rgba(2, 12, 27, 0.8);
+}
+
+.cyberpunk-modal .modal-title {
+color: var(--color-primary);
+text-shadow: 
+    0 0 10px var(--color-primary),
+    0 0 20px rgba(0, 240, 255, 0.5);
+font-weight: bold;
+}
+
+.cyberpunk-modal .btn-close {
+background: rgba(255, 255, 255, 0.2) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2300f0ff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+
+.cyberpunk-modal .modal-body {
+background-color: rgba(1, 11, 28, 0.9);
+padding: 20px;
+}
+
+.cyberpunk-card {
+background-color: rgba(2, 12, 27, 0.7);
+border: 1px solid rgba(0, 240, 255, 0.2);
+border-radius: 10px;
+padding: 15px;
+margin-bottom: 15px;
+transition: all 0.3s ease;
+}
+
+.cyberpunk-card:hover {
+background-color: rgba(0, 240, 255, 0.1);
+transform: scale(1.02);
+border-color: var(--color-primary);
+}
+
+.cyberpunk-card strong {
+display: block;
+color: var(--color-primary);
+margin-bottom: 10px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: bold;
+}
+
+.cyberpunk-card p {
+color: var(--color-text); /* Gris clair */
+margin: 0;
+font-size: 1rem;
+}
+
+/* Effet néon pour les détails */
+.neon-text {
+color: var(--color-text);
+text-shadow: 
+    0 0 5px var(--color-primary),
+    0 0 10px var(--color-primary);
+}
+
+/* Style du footer */
+.cyberpunk-modal .modal-footer {
+background-color: rgba(2, 12, 27, 0.8);
+border-top: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+/* Bouton de fermeture stylisé */
+.cyberpunk-modal .btn-outline-primary {
+color: var(--color-primary);
+border-color: var(--color-primary);
+transition: all 0.3s ease;
+}
+
+.cyberpunk-modal .btn-outline-primary:hover {
+background-color: rgba(0, 240, 255, 0.1);
+color: var(--color-text);
+box-shadow: 0 0 10px var(--color-primary);
+}
+
+/* Animation de l'entrée de la modal */
+@keyframes modalFadeIn {
+from {
+    opacity: 0;
+    transform: scale(0.9);
+}
+to {
+    opacity: 1;
+    transform: scale(1);
+}
+}
+
+.modal.fade .modal-dialog {
+transition: all 0.3s ease;
+animation: modalFadeIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}

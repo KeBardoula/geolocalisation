@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Mettre le fond en noir */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* Mettre le texte en blanc */
+}
+
+/* Styles pour la barre de recherche */
+
+#searchBar {
+    width: 50%;
+    height: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Mettre l'ombre en blanc */
+}
+
+#searchBar:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Mettre l'ombre en blanc */
+}
+
+/* Styles pour la carte */
+
+#map {
+    width: 60%;
+    height: 600px;
+    margin: 20px auto;
+    border: 1px solid #fff; /* Mettre la bordure en blanc */
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Mettre l'ombre en blanc */
+}
+
+/* Styles pour les épingles */
+
+.leaflet-marker-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Mettre l'ombre en blanc */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.leaflet-marker-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Mettre l'ombre en blanc */
+}
+
+.leaflet-popup {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #fff; /* Mettre la bordure en blanc */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Mettre l'ombre en blanc */
+}
+
+.leaflet-popup-content {
+    font-size: 14px;
+    color: #fff; /* Mettre le texte en blanc */
+}
+
+.leaflet-popup-content a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.leaflet-popup-content a:hover {
+    color: #0056b3;
+}
+
+/* Animations */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.leaflet-marker-icon {
+    animation: pulse 2s infinite;
+}
+
+/* Effets de transition */
+
+.leaflet-marker-icon {
+    transition: all 0.3s ease-in-out;
+}
+
+.leaflet-popup {
+    transition: all 0.3s ease-in-out;
+}

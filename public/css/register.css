@@ -1,0 +1,211 @@
+:root {
+    --color-primary: #007bff; /* Bleu primaire */
+    --color-secondary: #ff6b6b; /* Rouge corail */
+    --color-accent: #6bff6b; /* Vert néon */
+    --color-background: #1a1a1a; /* Fond sombre */
+    --color-text: #fff; /* Texte blanc */
+    --color-card-bg: rgba(0, 0, 0, 0.7); /* Fond de la carte */
+    --color-card-border: rgba(255, 255, 255, 0.1); /* Bordure de la carte */
+    --color-neon: var(--color-primary); /* Couleur du néon */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif; /* Police moderne */
+    background: linear-gradient(135deg, var(--color-background), #000); /* Dégradé de fond */
+    color: var(--color-text);
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent; /* Fond transparent pour laisser place au dégradé */
+    z-index: -1; /* Place le fond en arrière-plan */
+}
+
+.register-container {
+    position: relative;
+    z-index: 1; /* Place le formulaire au-dessus du fond animé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: var(--color-card-bg);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px); /* Effet de flou pour un look moderne */
+    border: 1px solid var(--color-card-border); /* Bordure subtile */
+    animation: fadeIn 1s ease-in-out; /* Animation d'apparition */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet de néon animé autour de la carte */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        var(--color-primary),
+        var(--color-secondary),
+        var(--color-accent),
+        var(--color-primary)
+    );
+    animation: rotateNeon 4s linear infinite;
+    z-index: -1;
+    opacity: 0.8; /* Effet de néon plus visible */
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    inset: 2px; /* Laisse un espace pour l'effet de néon */
+    background: var(--color-card-bg);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+@keyframes rotateNeon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    font-size: 2rem; /* Taille de police plus grande */
+    font-weight: 600; /* Texte plus gras */
+    text-transform: uppercase; /* Texte en majuscules */
+    letter-spacing: 2px; /* Espacement des lettres */
+    animation: glowText 2s infinite alternate; /* Animation de lueur sur le texte */
+}
+
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary), 0 0 20px var(--color-primary);
+    }
+    100% {
+ text-shadow: 0 0 10px var(--color-secondary), 0 0 20px var(--color-secondary), 0 0 30px var(--color-secondary);
+    }
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: var(--color-text);
+    transition: background 0.3s ease; /* Transition fluide pour le focus */
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-text);
+    outline: none; /* Supprime le contour par défaut */
+    box-shadow: 0 0 5px var(--color-primary); /* Ombre au focus */
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--color-secondary); /* Couleur secondaire pour le bouton */
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transition fluide */
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4); /* Ombre pour le bouton */
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary); /* Changement de couleur au survol */
+    transform: translateY(-2px); /* Effet de levée au survol */
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5); /* Ombre plus prononcée au survol */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-link a {
+    color: var(--color-primary); /* Couleur primaire pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transition de couleur fluide */
+}
+
+.login-link a:hover {
+    color: var(--color-secondary); /* Changement de couleur au survol */
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+label {
+    color: var(--color-text); /* Utilisation de la couleur de texte définie dans :root */
+    font-weight: 500; /* Texte légèrement plus gras */
+    font-size: 1rem; /* Taille de police standard */
+    margin-bottom: 0.5rem; /* Espacement sous le label */
+    display: block; /* Pour que chaque label soit sur une nouvelle ligne */
+    text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary); /* Effet de lueur */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition fluide */
+}
+
+label:hover {
+    color: var(--color-secondary); /* Changement de couleur au survol */
+    text-shadow: 0 0 10px var(--color-secondary), 0 0 20px var(--color-secondary); /* Effet de lueur plus prononcé au survol */
+}
+
+p {
+    color: var(--color-text); /* Utilisation de la couleur de texte définie dans :root */
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem; /* Taille de police plus petite */
+    line-height: 1.5; /* Espacement des lignes */
+    opacity: 0.9; /* Légère transparence */
+    text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary); /* Effet de lueur */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition fluide */
+}
+
+p:hover {
+    color: var(--color-secondary); /* Changement de couleur au survol */
+    text-shadow: 0 0 10px var(--color-secondary), 0 0 20px var(--color-secondary); /* Effet de lueur plus prononcé au survol */
+}

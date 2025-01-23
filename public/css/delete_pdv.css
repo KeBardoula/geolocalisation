@@ -1,0 +1,53 @@
+:root {
+    --color-primary: #00f0ff; /* Cyan néon vibrant */
+    --color-secondary: #ff3d68; /* Rose vif */
+    --color-accent: #7fff00; /* Vert lime électrique */
+    --color-background: #000814; /* Noir profond spatial */
+    --color-text: #e6e6e6; /* Gris clair */
+    --color-card-bg: rgba(2, 12, 27, 0.95); /* Bleu noir profond */
+    --color-table-bg: #010b1c; /* Noir bleuté profond */
+    --color-border: rgba(0, 240, 255, 0.3); /* Bordure cyan translucide */
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cyberpunk-container {
+    background-color: var(--color-card-bg);
+    border-radius: 15px;
+    box-shadow: 
+        0 0 20px rgba(0, 240, 255, 0.2), 
+        0 0 50px rgba(255, 61, 104, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cyberpunk-title {
+    color: var(--color-primary);
+    text-shadow: 
+        0 0 10px var(--color-primary), 
+        0 0 20px var(--color-primary);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-cyberpunk {
+    --bs-table-bg: var(--color-table-bg);
+    --bs-table-color: var(--color-text);
+    --bs-table-hover-bg: rgba(0, 240, 255, 0.1);
+}
+
+#pdv-list tr:hover {
+    cursor: pointer;
+    background-color: rgba(0, 240, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
